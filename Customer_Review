@@ -1,0 +1,10 @@
+SELECT
+    Reviews.review_id,
+    Users.name,
+    Reviews.review_text,
+    Reviews.rating,
+    Reviews.review_date
+FROM Reviews
+JOIN Users
+ON Reviews.user_id = Users.user_id
+ORDER BY Reviews.review_date DESC;
